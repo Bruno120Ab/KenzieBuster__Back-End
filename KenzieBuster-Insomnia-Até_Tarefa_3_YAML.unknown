@@ -1,0 +1,498 @@
+_type: export
+__export_format: 4
+__export_date: 2023-06-14T19:04:12.721Z
+__export_source: insomnia.desktop.app:v2023.2.2
+resources:
+  - _id: req_a9b2b7391c7545a0a72662e2cb477bd4
+    parentId: fld_0e1f9cce15af4912b29f3840c7834427
+    modified: 1686756009419
+    created: 1686755767762
+    url: http://localhost:8000/api/movies/{% response 'body',
+      'req_11729032acb247f4916f1f34fcd3941e', 'b64::JC5pZA==::46b', 'never', 60
+      %}/orders/
+    name: Create
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "price": 100.00
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{% response 'body', 'req_6d51f834281542b79ed1295943103eec',
+        'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+    metaSortKey: -1686755767762
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_0e1f9cce15af4912b29f3840c7834427
+    parentId: wrk_e9daa64a53db4a69a973591287985ce5
+    modified: 1686755766534
+    created: 1686755766534
+    name: Movie Order
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1686755766534
+    _type: request_group
+  - _id: wrk_e9daa64a53db4a69a973591287985ce5
+    parentId: null
+    modified: 1686455971920
+    created: 1686455962929
+    name: KenzieBuster
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_11729032acb247f4916f1f34fcd3941e
+    parentId: fld_81c342f29e394d7f8a617e0f5b9ae158
+    modified: 1686668313247
+    created: 1686667389891
+    url: http://localhost:8000/api/movies/
+    name: Create
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+          "title": "Revolver",
+          "duration": "110min",
+          "rating": "R",
+          "synopsis": "Jake Green is a hotshot gambler, long on audacity and short on..."
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{% response 'body', 'req_6d51f834281542b79ed1295943103eec',
+        'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+      disabled: false
+    metaSortKey: -1686667389891
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_81c342f29e394d7f8a617e0f5b9ae158
+    parentId: wrk_e9daa64a53db4a69a973591287985ce5
+    modified: 1686667347372
+    created: 1686667347372
+    name: Movies
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1686667347372
+    _type: request_group
+  - _id: req_4875bf672a1e41d5961d37edaf7a290b
+    parentId: fld_81c342f29e394d7f8a617e0f5b9ae158
+    modified: 1686668195127
+    created: 1686668179208
+    url: http://localhost:8000/api/movies/
+    name: Create 2
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "title": "Matrix",
+          "duration": "110min"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{% response 'body', 'req_6d51f834281542b79ed1295943103eec',
+        'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+    metaSortKey: -1686645161998.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5ccf5cad485f4cda8c01ce53fe6bb170
+    parentId: fld_81c342f29e394d7f8a617e0f5b9ae158
+    modified: 1686667832656
+    created: 1686667826920
+    url: http://localhost:8000/api/movies/
+    name: List All
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{% response 'body', 'req_6d51f834281542b79ed1295943103eec',
+        'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+    metaSortKey: -1686622934105.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4290f0ab41ce4b48a10190b7a85ae4ab
+    parentId: fld_81c342f29e394d7f8a617e0f5b9ae158
+    modified: 1686668136249
+    created: 1686668098221
+    url: http://localhost:8000/api/movies/{% response 'body',
+      'req_11729032acb247f4916f1f34fcd3941e', 'b64::JC5pZA==::46b', 'never', 60
+      %}
+    name: List By Id
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{% response 'body', 'req_6d51f834281542b79ed1295943103eec',
+        'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+    metaSortKey: -1686600706212.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1cbee608f6c44cab8a95c7ca1d9cef18
+    parentId: fld_81c342f29e394d7f8a617e0f5b9ae158
+    modified: 1686668415813
+    created: 1686668150406
+    url: http://localhost:8000/api/movies/{% response 'body',
+      'req_4875bf672a1e41d5961d37edaf7a290b', 'b64::JC5pZA==::46b', 'never', 60
+      %}
+    name: Delete By Id
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: "{% response 'body', 'req_6d51f834281542b79ed1295943103eec',
+        'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+      disabled: true
+    metaSortKey: -1686589592266.375
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6d51f834281542b79ed1295943103eec
+    parentId: fld_469d697da795406a882d0c8179526298
+    modified: 1686578810086
+    created: 1686578478320
+    url: http://localhost:8000/api/users/login/
+    name: Access
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "kr_buster",
+          "password": "1234"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1686578478320
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_469d697da795406a882d0c8179526298
+    parentId: fld_7a756c7b8878450f886f0b1c6e229e9c
+    modified: 1686578476738
+    created: 1686578476738
+    name: Login
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1686578476738
+    _type: request_group
+  - _id: fld_7a756c7b8878450f886f0b1c6e229e9c
+    parentId: wrk_e9daa64a53db4a69a973591287985ce5
+    modified: 1686455995905
+    created: 1686455995905
+    name: User
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1686455995905
+    _type: request_group
+  - _id: req_b62c67e42a8a4722bf1c23372d6dfd40
+    parentId: fld_469d697da795406a882d0c8179526298
+    modified: 1686578870602
+    created: 1686578507363
+    url: http://localhost:8000/api/users/login/refresh/
+    name: Refresh
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"refresh": "{% response 'body', 'req_6d51f834281542b79ed1295943103eec', 'b64::JC5yZWZyZXNo::46b', 'never', 60 %}"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1686517237610.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0872af0a91034768828f05317491509d
+    parentId: fld_5858147c2e424119abe37632ab3e494a
+    modified: 1686578789116
+    created: 1686458847641
+    url: http://localhost:8000/api/users/
+    name: "Success: Common"
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "kr_common",
+          "email": "kr_common@mail.com",
+          "birthdate": "1996-09-18",
+          "first_name": "Kr",
+          "last_name": "User",
+          "password": "1234"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1686455996901
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_5858147c2e424119abe37632ab3e494a
+    parentId: fld_7a756c7b8878450f886f0b1c6e229e9c
+    modified: 1686458828480
+    created: 1686458828480
+    name: Post
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1686458828481
+    _type: request_group
+  - _id: req_84a768c3fa1242e6b6684888bfc62b3c
+    parentId: fld_5858147c2e424119abe37632ab3e494a
+    modified: 1686578799423
+    created: 1686455996926
+    url: http://localhost:8000/api/users/
+    name: "Success: Employee"
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "kr_buster",
+          "email": "kr_bustern@mail.com",
+          "birthdate": "1996-09-18",
+          "first_name": "KrKr",
+          "last_name": "Employee",
+          "password": "1234",
+          "is_employee": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1686455996888.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_188bf8c78ed9411f9371f5ad6cb87322
+    parentId: fld_5858147c2e424119abe37632ab3e494a
+    modified: 1686458998926
+    created: 1686458946690
+    url: http://localhost:8000/api/users/
+    name: "Error: Username already in use"
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "lucira_buster",
+          "email": "lucira@kenziebuster.com",
+          "birthdate": "1999-09-09",
+          "first_name": "Lucira",
+          "last_name": "Buster",
+          "password": "1234",
+          "is_employee": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1686455996882.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_581daa92f5f2402fa3d25ef3832e5eb2
+    parentId: fld_5858147c2e424119abe37632ab3e494a
+    modified: 1686459006347
+    created: 1686458974810
+    url: http://localhost:8000/api/users/
+    name: "Error: Email already in use"
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "lucira",
+          "email": "lucira_buster@kenziebuster.com",
+          "birthdate": "1999-09-09",
+          "first_name": "Lucira",
+          "last_name": "Buster",
+          "password": "1234",
+          "is_employee": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1686455996879.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0f868e8693be4018aa3b8d65ec182209
+    parentId: fld_5858147c2e424119abe37632ab3e494a
+    modified: 1686458830967
+    created: 1686458811956
+    url: http://localhost:8000/api/users/
+    name: "Error: Empty Body"
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1686455996876
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_d75b8471ef29580960b9c1d31d9da0145cfd4e59
+    parentId: wrk_e9daa64a53db4a69a973591287985ce5
+    modified: 1686455962933
+    created: 1686455962933
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1686455962933
+    _type: environment
+  - _id: jar_d75b8471ef29580960b9c1d31d9da0145cfd4e59
+    parentId: wrk_e9daa64a53db4a69a973591287985ce5
+    modified: 1686455962934
+    created: 1686455962934
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_8496f708c4014038913dcbad7a27d471
+    parentId: wrk_e9daa64a53db4a69a973591287985ce5
+    modified: 1686455971919
+    created: 1686455962930
+    fileName: KenzieBuster
+    contents: ""
+    contentType: yaml
+    _type: api_spec
